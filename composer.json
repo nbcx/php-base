@@ -4,7 +4,7 @@
   "type": "project",
   "keywords": [
       "algorithm",
-      "design",
+      "design"
   ],
   "minimum-stability": "dev",
   "require": {
