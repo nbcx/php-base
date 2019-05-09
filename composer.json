@@ -1,27 +1,24 @@
 {
-  "name": "moyo/passport",
-  "description": "the moyo auth server",
+  "name": "nbcx/phpbase",
+  "description": "用PHP写经典设计模式，经典算法等等",
   "type": "project",
   "keywords": [
-      "moyo",
-      "nb",
-      "auth"
+      "algorithm",
+      "design",
   ],
   "minimum-stability": "dev",
   "require": {
     "nbcx/framework": "dev-master"
   },
   "extra": {
-    "nb-path": "./vendor/nbcx/nb"
+    "nb-path": "./vendor/nbcx/framework"
   },
   "config": {
     "preferred-install": "dist"
   },
   "autoload": {
     "psr-4": {
-        "phpbase\\": "./src/",
-        "nbcx\\oauth\\": "./vendor/nbcx/oauth/src/",
-        "nbcx\\http\\": "./vendor/nbcx/http/src/"
+        "phpbase\\": "./src/"
     }
   }
 }
