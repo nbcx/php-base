@@ -16,6 +16,8 @@ return [
 
     'folder_app' => 'test',
 
-    'folder_console'=>false
+    'folder_console'=>false,
 
+    //RUNTIME DIR
+    'path_temp'=> __APP__.'vendor'.DS.'tmp'.DS
 ];
