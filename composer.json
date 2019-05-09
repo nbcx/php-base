@@ -1,0 +1,27 @@
+{
+  "name": "moyo/passport",
+  "description": "the moyo auth server",
+  "type": "project",
+  "keywords": [
+      "moyo",
+      "nb",
+      "auth"
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "nbcx/framework": "dev-master"
+  },
+  "extra": {
+    "nb-path": "./vendor/nbcx/nb"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "autoload": {
+    "psr-4": {
+        "phpbase\\": "./src/",
+        "nbcx\\oauth\\": "./vendor/nbcx/oauth/src/",
+        "nbcx\\http\\": "./vendor/nbcx/http/src/"
+    }
+  }
+}
