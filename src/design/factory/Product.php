@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of the NB Framework package.
  *
@@ -7,22 +8,18 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace controller;
 
-use phpbase\design\factory\Client;
-use phpbase\design\factory\Creator;
-
+namespace phpbase\design\factory;
 /**
- * Factory
+ * Product
  *
+ * @package phpbase\design\factory
  * @link https://nb.cx
  * @author: collin <collin@nb.cx>
- * @date: 2019/5/9
+ * @date: 2019-05-10
  */
-class Factory {
+interface Product {
 
-    public function index() {
-        $worker = new Client();
-    }
+    public function getProperties();
 
 }

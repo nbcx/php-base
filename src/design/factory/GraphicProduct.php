@@ -8,22 +8,22 @@
  * file that was distributed with this source code.
  */
 namespace phpbase\design\factory;
-
 /**
- * Creator 创建者类
- * 这是抽象创建者类。它定义了一个抽象的工厂方法，让子类实现此方法制造产品
+ * GraphicProduct
  *
+ * @package phpbase\design\factory
  * @link https://nb.cx
  * @author: collin <collin@nb.cx>
- * @date: 2019/5/9
+ * @date: 2019-05-10
  */
-abstract class Creator {
+class GraphicProduct implements Product {
 
-    protected abstract function factoryMethod();
+    private $mfgProduct;
 
-    public function startFactory() {
-        $mfg = $this->factoryMethod();
-        return $mfg;
+    public function getProperties() {
+        // TODO: Implement getProperties() method.
+        $this->mfgProduct = 'this is a gtaphic.<3';
+        return $this->mfgProduct;
     }
 
 }

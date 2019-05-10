@@ -8,22 +8,20 @@
  * file that was distributed with this source code.
  */
 namespace phpbase\design\factory;
-
 /**
- * Creator 创建者类
- * 这是抽象创建者类。它定义了一个抽象的工厂方法，让子类实现此方法制造产品
+ * GraphicFactory
  *
+ * @package phpbase\design\factory
  * @link https://nb.cx
  * @author: collin <collin@nb.cx>
- * @date: 2019/5/9
+ * @date: 2019-05-10
  */
-abstract class Creator {
+class GraphicFactory extends Creator {
 
-    protected abstract function factoryMethod();
-
-    public function startFactory() {
-        $mfg = $this->factoryMethod();
-        return $mfg;
+    protected function factoryMethod() {
+        // TODO: Implement factoryMethod() method.
+        $product = new GraphicProduct();
+        return $product->getProperties();
     }
 
 }
